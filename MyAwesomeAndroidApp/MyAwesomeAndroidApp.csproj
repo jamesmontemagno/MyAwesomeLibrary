@@ -181,6 +181,12 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyAwesomeLibrary\MyAwesomeLibrary.csproj">
+      <Project>{559f1ecf-daf0-4d32-ab1e-1a232144197b}</Project>
+      <Name>MyAwesomeLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
@@ -189,12 +195,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <ProjectReference Include="..\MyAwesomeLibrary\MyAwesomeLibrary.csproj">
-      <Project>{af54fb93-15e1-40a2-a074-a24e5a85afc5}</Project>
-      <Name>MyAwesomeLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
