@@ -9,5 +9,6 @@ namespace MyAwesomeLibrary
     class Monkey
     {
         const bool LoveBananas = true;
+        const bool IsAdorable = true;
     }
 }
